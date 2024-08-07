@@ -2,6 +2,7 @@
   "name": "llama-feeder",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "build": "npx tsc",
@@ -25,7 +26,7 @@
     "@fastify/secure-session": "^7.5.1",
     "@fastify/static": "^7.0.4",
     "@hapi/boom": "^10.0.1",
-    "ajv-errors": "^3.0.0",
+    "better-sqlite3": "^11.1.2",
     "commander": "^12.1.0",
     "convict": "^6.2.4",
     "cookie-parser": "^1.4.6",
@@ -33,25 +34,22 @@
     "escape-html": "^1.0.3",
     "fastify": "^4.28.1",
     "fastify-plugin": "^4.5.1",
-    "knex": "^3.1.0",
+    "feedparser": "^2.2.10",
+    "iconv": "^3.0.1",
     "mkdirp": "^3.0.1",
+    "node-fetch": "^3.3.2",
+    "opmlparser": "^0.8.0",
+    "p-queue": "^8.0.1",
+    "pino": "^9.3.2",
     "pino-http": "^10.2.0",
     "pino-pretty": "^11.2.2",
-    "sqlite3": "^5.1.7"
+    "sqlite-vec": "^0.1.1"
   },
   "devDependencies": {
-    "@types/convict": "^6.1.6",
-    "@types/cookie-parser": "^1.4.7",
-    "@types/escape-html": "^1.0.4",
-    "@types/glob": "^8.1.0",
-    "@types/node": "^20.14.12",
     "glob": "^11.0.0",
     "json-schema-to-ts": "^3.1.0",
     "nodemon": "^3.1.4",
     "npm-run-all": "^4.1.5",
-    "onchange": "^7.1.0",
-    "ts-node": "^10.9.2",
-    "tsx": "^4.16.2",
-    "typescript": "^5.5.4"
+    "onchange": "^7.1.0"
   }
 }
