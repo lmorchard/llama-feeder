@@ -22,7 +22,7 @@ export const up = (knex) => {
       t.string("link");
       t.string("author");
       t.string("content");
-      t.boolean("defunct");
+      t.timestamp("lastSeenAt");
       t.timestamp("firstSeenAt");
     }).raw(`
       create virtual table FeedItemsVectors using vec0(
