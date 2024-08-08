@@ -14,7 +14,8 @@
     "dev:start": "nodemon --watch src --ext 'js,ts' --exec 'tsx ./src/index.ts --force-pretty-logs serve'",
     "dev:manage": "tsx ./src/index.ts",
     "db": "npx knex --knexfile ./src/repositories/sqlite/knexfile.ts",
-    "db:migrate": "npm run db migrate:latest"
+    "db:migrate": "npm run db migrate:latest",
+    "knex": "knex"
   },
   "author": "",
   "license": "ISC",
@@ -36,6 +37,7 @@
     "fastify-plugin": "^4.5.1",
     "feedparser": "^2.2.10",
     "iconv": "^3.0.1",
+    "knex": "^3.1.0",
     "mkdirp": "^3.0.1",
     "node-fetch": "^3.3.2",
     "opmlparser": "^0.8.0",
