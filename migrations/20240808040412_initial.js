@@ -24,12 +24,7 @@ export const up = (knex) => {
       t.string("content");
       t.timestamp("lastSeenAt");
       t.timestamp("firstSeenAt");
-    }).raw(`
-      create virtual table FeedItemsVectors using vec0(
-        feedItemId integer primary key,
-        titleAndSummaryEmbedding float[384]
-      );
-    `);
+    });
 };
 
 /**
@@ -39,8 +34,7 @@ export const up = (knex) => {
 export const down = (knex) => {
   return knex.schema
     .dropTable("Feeds")
-    .dropTable("FeedItems")
-    .dropTable("FeedItemVectors");
+    .dropTable("FeedItems");
 };
 
 const commonFields = (t) => {
