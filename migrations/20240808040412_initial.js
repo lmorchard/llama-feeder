@@ -11,22 +11,19 @@ export const up = (knex) => {
       t.string("title");
       t.string("description");
       t.string("link");
-      t.string("status");
-      t.string("statusText");
-      t.string("lastError");
-      t.bigInteger("lastValidated");
-      t.bigInteger("lastParsed");
+      t.timestamp("newestItemDate");
     })
     .createTable("FeedItems", (t) => {
       commonFields(t);
       t.string("feedId").references("Feeds.id");
       t.string("guid").index().unique();
+      t.string("date");
       t.string("title");
       t.string("link");
       t.string("author");
-      t.string("summary");
-      t.string("date");
-      t.string("pubdate");
+      t.string("content");
+      t.boolean("defunct");
+      t.timestamp("firstSeenAt");
     }).raw(`
       create virtual table FeedItemsVectors using vec0(
         feedItemId integer primary key,
@@ -49,5 +46,5 @@ export const down = (knex) => {
 const commonFields = (t) => {
   t.increments("id").primary();
   t.timestamps(true, true, true);
-  t.json("json");
+  t.json("metadata");
 };
