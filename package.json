@@ -21,6 +21,7 @@
     "@hapi/boom": "^10.0.1",
     "ajv-errors": "^3.0.0",
     "better-sqlite3": "^11.1.2",
+    "cheerio": "^1.0.0",
     "commander": "^12.1.0",
     "convict": "^6.2.4",
     "cookie-parser": "^1.4.6",
