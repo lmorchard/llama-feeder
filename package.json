@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node ./index.js serve",
     "dev": "nodemon ./index.js serve",
-    "fetch": "node ./index.js fetch && node ./index.js embed backfill"
+    "fetch": "node ./index.js fetch && node ./index.js thumbnails backfill && node ./index.js embed backfill"
   },
   "author": "",
   "license": "ISC",
