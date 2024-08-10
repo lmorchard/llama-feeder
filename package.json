@@ -7,11 +7,12 @@
   "scripts": {
     "start": "node ./index.js serve",
     "dev": "nodemon ./index.js serve",
-    "fetch": "node ./index.js fetch && node ./index.js thumbnails backfill && node ./index.js embed backfill"
+    "fetch": "node ./index.js fetch && node ./index.js thumbnails backfill",
+    "embed": "node ./index.js embed backfill"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {       
     "@fastify/accepts": "^4.3.0",
     "@fastify/compress": "^7.0.3",
     "@fastify/cookie": "^9.3.1",
