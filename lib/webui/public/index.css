@@ -42,10 +42,10 @@ feeder-feed feeder-feed-item {
 feeder-feed feeder-feed-item header {
   display: flex;
   max-height: 30em;
-  min-height: 10em;
+  min-height: 12em;
   overflow: hidden;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 feeder-feed feeder-feed-item header .title {
@@ -53,10 +53,12 @@ feeder-feed feeder-feed-item header .title {
   left: 0;
   right: 0;
   bottom: 0;
+  font-size: 1.125em;
+  line-height: 1.25em;
   padding: 1em;
   color: rgba(255, 255, 255, 1.0);
   background-color: rgba(0, 0, 0, 0.5);
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.5)
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.75)
 }
 
 feeder-feed feeder-feed-item .thumbnail {
@@ -74,4 +76,5 @@ feeder-feed feeder-feed-item .summary {
   padding: 0;
   margin: 0;
   padding: 1em;
+  line-height: 1.25em;
 }
