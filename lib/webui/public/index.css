@@ -37,6 +37,7 @@ feeder-feed feeder-feed-item {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   height: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 feeder-feed feeder-feed-item header {
@@ -75,6 +76,14 @@ feeder-feed feeder-feed-item .thumbnail img {
 feeder-feed feeder-feed-item .summary {
   padding: 0;
   margin: 0;
-  padding: 1em;
+  padding: 1em 1em 2.25em 1em;
   line-height: 1.25em;
+}
+
+feeder-feed feeder-feed-item time {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 0.9em;
+  padding: 0.5em 0.75em;
 }
